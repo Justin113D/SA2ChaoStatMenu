@@ -3,7 +3,7 @@
 #include "SA2ModLoader.h"
 #include <string>
 
-enum ChaoEmotionball : char
+enum ChaoEmotionball : __int8
 {
 	ChaoEmotionball_Normal = 0,
 	ChaoEmotionball_Flame = 1,
@@ -15,7 +15,7 @@ struct NChaoData
 	char gap_0[18];
 	char Name[7];
 	char gap_19[7];
-	char SwimFraction;
+	char SwimFraction; //0x20
 	char FlyFraction;
 	char RunFraction;
 	char PowerFraction;
@@ -23,7 +23,7 @@ struct NChaoData
 	char LuckFraction;
 	char IntelligenceFraction;
 	char UnknownFraction;
-	ChaoGrade SwimGrade;
+	ChaoGrade SwimGrade; //0x28
 	ChaoGrade FlyGrade;
 	ChaoGrade RunGrade;
 	ChaoGrade PowerGrade;
@@ -31,7 +31,7 @@ struct NChaoData
 	ChaoGrade LuckGrade;
 	ChaoGrade IntelligenceGrade;
 	ChaoGrade UnknownGrade;
-	char SwimLevel;
+	char SwimLevel;	//0x30
 	char FlyLevel;
 	char RunLevel;
 	char PowerLevel;
@@ -39,16 +39,16 @@ struct NChaoData
 	char LuckLevel;
 	char IntelligenceLevel;
 	char UnknownLevel;
-	__int16 SwimStat;
+	__int16 SwimStat; //0x38
 	__int16 FlyStat;
 	__int16 RunStat;
 	__int16 PowerStat;
 	__int16 StaminaStat;
-	__int16 LuckStat;
-	char IntelligenceStat;
+	__int16 LuckStat; 
+	char IntelligenceStat; //0x44
 	char UnknownStat;
 	char field_46[58];
-	char Type;
+	ChaoType Type;	//0x80
 	char Garden;
 	__int16 Happiness;
 	__int16 field_84;
@@ -58,7 +58,7 @@ struct NChaoData
 	__int16 Lifespan2;
 	__int16 Reincarnations;
 	char field_90[24];
-	float PowerRun;
+	float PowerRun;	//0xA8
 	float FlySwim;
 	float Alignment;
 	char field_B4[12];
@@ -131,7 +131,7 @@ struct NChaoData
 	char StomachAcheLevel;
 	char field_160[4];
 	__int16 SA2BToys;
-	char field_166;
+	char field_166[6];
 	ChaoCharacterBond SA2BCharacterBonds[6];
 	char field_190[680];
 	ChaoDNA DNA;
@@ -420,6 +420,120 @@ std::wstring DecodeChaoName(char name[])
 	}
 	return result;
 }
+
+std::string FavFruit[8] = {
+	"Round",
+	"Round",
+	"Triangle",
+	"Triangle",
+	"Square",
+	"Square",
+	"None",
+	"None",
+};
+
+std::string Grade[6] = {
+	"E",
+	"D",
+	"C",
+	"B",
+	"A",
+	"S",
+};
+
+std::string Color[14] = {
+	"Normal",
+	"Yellow",
+	"White",
+	"Brown",
+	"Sky Blue",
+	"Pink",
+	"Blue",
+	"Grey",
+	"Green",
+	"Red",
+	"Lime Green",
+	"Purple",
+	"Orange",
+	"Black"
+};
+
+std::string Texture[17] = {
+	"None",
+	"Gold",
+	"Silver",
+	"Ruby",
+	"Sapphire",
+	"Emerald",
+	"Aquamarine",
+	"Garnet",
+	"Onyx",
+	"Peridot",
+	"Topaz",
+	"Pearl",
+	"Metal1",
+	"Metal2",
+	"Glass",
+	"Moon",
+};
+
+std::string EggColor[55] = {
+	"Normal",
+	"Yellow Mono-Tone",
+	"White Mono-Tone",
+	"Brown Mono-Tone",
+	"Sky Blue Mono-Tone",
+	"Pink Mono-Tone",
+	"Blue Mono-Tone",
+	"Grey Mono-Tone",
+	"Green Mono-Tone",
+	"Red Mono-Tone",
+	"Lime Green Mono-Tone",
+	"Purple Mono-Tone",
+	"Orange Mono-Tone",
+	"Black Mono-Tone",
+	"Yellow Two-Tone",
+	"White Two-Tone",
+	"Brown Two-Tone",
+	"Sky Blue Two-Tone",
+	"Pink Two-Tone",
+	"Blue Two-Tone",
+	"Grey Two-Tone",
+	"Green Two-Tone",
+	"Red Two-Tone",
+	"Lime Green Two-Tone",
+	"Purple Two-Tone",
+	"Orange Two-Tone",
+	"Black Two-Tone",
+	"Normal Shiny",
+	"Yellow Shiny Mono-Tone",
+	"White Shiny Mono-Tone",
+	"Brown Shiny Mono-Tone",
+	"Sky Shiny Blue Mono-Tone",
+	"Pink Shiny Mono-Tone",
+	"Blue Shiny Mono-Tone",
+	"Grey Shiny Mono-Tone",
+	"Green Shiny Mono-Tone",
+	"Red Shiny Mono-Tone",
+	"Lime Shiny Green Mono-Tone",
+	"Purple Shiny Mono-Tone",
+	"Orange Shiny Mono-Tone",
+	"Black Shiny Mono-Tone",
+	"Yellow Shiny Two-Tone",
+	"White Shiny Two-Tone",
+	"Brown Shiny Two-Tone",
+	"Sky Shiny Blue Two-Tone",
+	"Pink Shiny Two-Tone",
+	"Blue Shiny Two-Tone",
+	"Grey Shiny Two-Tone",
+	"Green Shiny Two-Tone",
+	"Red Shiny Two-Tone",
+	"Lime Shiny Green Two-Tone",
+	"Purple Shiny Two-Tone",
+	"Orange Shiny Two-Tone",
+	"Black Shiny Two-Tone",
+	"Glitchy Normal"
+};
 
 #pragma region rendering stuff
 
