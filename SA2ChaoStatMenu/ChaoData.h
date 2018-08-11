@@ -64,6 +64,7 @@ struct NChaoData
 	char field_B4[12];
 	float EvolutionProgress;
 	char field_C4[13];
+
 	ChaoEyes EyeType;
 	ChaoMouth MouthType;
 	ChaoEmotionball BallType;
@@ -89,6 +90,7 @@ struct NChaoData
 	char SA2BWingType;
 	char SA2BFaceType;
 	char field_124[8];
+
 	char Joy;
 	char Anger;
 	char Urgetocry;
@@ -130,6 +132,7 @@ struct NChaoData
 	char HiccupsLevel;
 	char StomachAcheLevel;
 	char field_160[4];
+
 	__int16 SA2BToys;
 	char field_166[6];
 	ChaoCharacterBond SA2BCharacterBonds[6];
@@ -533,6 +536,42 @@ std::string EggColor[55] = {
 	"Orange Shiny Two-Tone",
 	"Black Shiny Two-Tone",
 	"Glitchy Normal"
+};
+
+std::string Type[26] = {
+	"Empty",
+	"Egg",
+	"Child",
+	"Good",
+	"Bad",
+	"Neutral Normal",
+	"Hero Normal",
+	"Dark Normal",
+	"Neutral Swim",
+	"Hero Swim",
+	"Dark Swim",
+	"Neutral Fly",
+	"Hero Fly",
+	"Dark Fly",
+	"Neutral Run",
+	"Hero Run",
+	"Dark Run",
+	"Neutral Power",
+	"Hero Power",
+	"Dark Power",
+	"Neutral Chaos",
+	"Hero Chaos",
+	"Dark Chaos",
+	"Tails",
+	"Knuckles",
+	"Amy",
+};
+
+std::string Garden[4] = {
+	"None",
+	"Neutral Garden",
+	"Hero Garden",
+	"Dark Garden"
 };
 
 #pragma region rendering stuff
