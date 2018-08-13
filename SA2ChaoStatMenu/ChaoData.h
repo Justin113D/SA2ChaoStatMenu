@@ -574,6 +574,19 @@ std::string Garden[4] = {
 	"Dark Garden"
 };
 
+std::string SetZero(int number, int count)
+{
+	int l = std::to_string(number).length();
+	std::string result;
+	if(l < count)
+		for (int i = count - l; i > 0; i--)
+		{
+			result.append("0");
+		}
+	result.append(std::to_string(number));
+	return result;
+}
+
 #pragma region rendering stuff
 
 enum D3D9Funcs
