@@ -36,4 +36,77 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\AlignmentGradient.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Body.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Corner_BL_Border.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Corner_BL_Filling.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Corner_BR_Border.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Corner_BR_Filling.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Corner_TL_Border.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Corner_TL_Filling.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Corner_TR_Border.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Corner_TR_Filling.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Edge_B_Border.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Edge_B_Filling.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Edge_L_Border.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Edge_L_Filling.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Edge_R_Border.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Edge_R_Filling.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Edge_T_Border.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Edge_T_Filling.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Empty.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\EvoProgressGradient.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\RPGradient.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\SFGradient.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\Typo_DodamM.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+  </ItemGroup>
 </Project>

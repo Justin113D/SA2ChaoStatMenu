@@ -77,18 +77,18 @@ struct NChaoData
 	char Texture;
 	char Shiny;
 	char EggColor;
-	SADXBodyType BodyType;
-	char BodyTypeAnimal;
+	SA2BBodyType BodyType;
+	SA2BAnimal BodyTypeAnimal;
 	char field_DF[57];
 	int SA2AnimalBehaviour;
-	char SA2BArmType;
-	char SA2BEarType;
-	char SA2BForeheadType;
-	char SA2BHornType;
-	char SA2BLegType;
-	char SA2BTailType;
-	char SA2BWingType;
-	char SA2BFaceType;
+	SA2BAnimal SA2BArmType;
+	SA2BAnimal SA2BEarType;
+	SA2BAnimal SA2BForeheadType;
+	SA2BAnimal SA2BHornType;
+	SA2BAnimal SA2BLegType;
+	SA2BAnimal SA2BTailType;
+	SA2BAnimal SA2BWingType;
+	SA2BAnimal SA2BFaceType;
 	char field_124[8];
 
 	char Joy;
@@ -572,6 +572,178 @@ std::string Garden[4] = {
 	"Neutral Garden",
 	"Hero Garden",
 	"Dark Garden"
+};
+
+std::string Eyes[14] = {
+	"Normal",
+	"Painful",
+	"Closed straight",
+	"Closed happy",
+	"Closed up",
+	"Tiny",
+	"Circles",
+	"Closed down",
+	"Tiny",
+	"Half closed",
+	"Mean",
+	"Green Chaos",
+	"Blue Chaos",
+	"Yellow Chaos"
+};
+
+std::string Medal[16] = {
+	"None",
+	"Aquamarine",
+	"Topaz",
+	"Peridot",
+	"Garnet",
+	"Onyx",
+	"Diamond",
+	"Beginner",
+	"Challenge",
+	"Hero",
+	"Dark",
+	"Pearl",
+	"Amethyst",
+	"Emerald",
+	"Ruby",
+	"Sapphire"
+};
+
+std::string Mouth[16] = {
+	"None",
+	"Toothy Smile",
+	"Open",
+	"Closed Smile",
+	"Closed Frown",
+	"Open Smile",
+	"Open Frown",
+	"Closed Smile",
+	"Squiggly",
+	"Toothy Frown",
+	"Closed Frown",
+	"Wide Open",
+	"Closed Frown",
+	"Straight Mustache",
+	"Squiggly Mustache 1",
+	"Squiggly Mustache 2",
+};
+
+std::string EmotionBall[3] ={
+	"Normal",
+	"Flame",
+	"None"
+};
+
+std::string Hat[71] = {
+	"None",
+	"Pumpkin",
+	"Skull",
+	"Apple",
+	"Bucket",
+	"Empty Can",
+	"Cardboard Box",
+	"Flower Pot",
+	"Paper Bag",
+	"Pan",
+	"Stump",
+	"Watermelon",
+	"Red Wool Beanie",
+	"Blue Wool Beanie",
+	"Black Wool Beanie",
+	"Pacifier",
+	"Normal Egg Shell",
+	"Yellow Mono-Tone Egg Shell",
+	"White Mono-Tone Egg Shell",
+	"Brown Mono-Tone Egg Shell",
+	"Sky Blue Mono-Tone Egg Shell",
+	"Pink Mono-Tone Egg Shell",
+	"Blue Mono-Tone Egg Shell",
+	"Grey Mono-Tone Egg Shell",
+	"Green Mono-Tone Egg Shell",
+	"Red Mono-Tone Egg Shell",
+	"Lime Green Mono-Tone Egg Shell",
+	"Purple Mono-Tone Egg Shell",
+	"Orange Mono-Tone Egg Shell",
+	"Black Mono-Tone Egg Shell",
+	"Yellow Two-Tone Egg Shell",
+	"White Two-Tone Egg Shell",
+	"Brown Two-Tone Egg Shell",
+	"Sky Blue Two-Tone Egg Shell",
+	"Pink Two-Tone Egg Shell",
+	"Blue Two-Tone Egg Shell",
+	"Grey Two-Tone Egg Shell",
+	"Green Two-Tone Egg Shell",
+	"Red Two-Tone Egg Shell",
+	"Lime Green Two-Tone Egg Shell",
+	"Purple Two-Tone Egg Shell",
+	"Orange Two-Tone Egg Shell",
+	"Black Two-Tone Egg Shell",
+	"Normal Shiny Egg Shell",
+	"Yellow Shiny Mono-Tone Egg Shell",
+	"White Shiny Mono-Tone Egg Shell",
+	"Brown Shiny Mono-Tone Egg Shell",
+	"Sky Blue Shiny Mono-Tone Egg Shell",
+	"Pink Shiny Mono-Tone Egg Shell",
+	"Blue Shiny Mono-Tone Egg Shell",
+	"Grey Shiny Mono-Tone Egg Shell",
+	"Green Shiny Mono-Tone Egg Shell",
+	"Red Shiny Mono-Tone Egg Shell",
+	"Lime Green Shiny Mono-Tone Egg Shell",
+	"Purple Shiny Mono-Tone Egg Shell",
+	"Orange Shiny Mono-Tone Egg Shell",
+	"Black Shiny Mono-Tone Egg Shell",
+	"Yellow Shiny Two-Tone Egg Shell",
+	"White Shiny Two-Tone Egg Shell",
+	"Brown Shiny Two-Tone Egg Shell",
+	"Sky Blue Shiny Two-Tone Egg Shell",
+	"Pink Shiny Two-Tone Egg Shell",
+	"Blue Shiny Two-Tone Egg Shell",
+	"Grey Shiny Two-Tone Egg Shell",
+	"Green Shiny Two-Tone Egg Shell",
+	"Red Shiny Two-Tone Egg Shell",
+	"Lime Green Shiny Two-Tone Egg Shell",
+	"Purple Shiny Two-Tone Egg Shell",
+	"Orange Shiny Two-Tone Egg Shell",
+	"Black Shiny Two-Tone Egg Shell",
+	"Glitchy Normal Egg Shell"
+};
+
+std::string BodyType[6] = {
+	"Normal",
+	"Egg Chao",
+	"Omochao",
+	"Animal",
+	"???",
+	"None",
+};
+
+std::string Animal[25] = {
+	"Penguin",
+	"Seal",
+	"Otter",
+	"Rabbit",
+	"Cheetah",
+	"Warthog",
+	"Bear",
+	"Tiger",
+	"Gorilla",
+	"Peacock",
+	"Parrot",
+	"Condor",
+	"Skunk",
+	"Sheep",
+	"Raccoon",
+	"Half Fish",
+	"Skeleton Dog",
+	"Bat",
+	"Dragon",
+	"Unicorn",
+	"Phoenix",
+	"Yellow Chaos Drive",
+	"Green Chaos Drive",
+	"Red Chaos Drive",
+	"Purple Chaos Drive",
 };
 
 std::string SetZero(int number, int count)

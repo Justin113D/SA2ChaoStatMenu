@@ -163,6 +163,33 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\AlignmentGradient.png" />
+    <Image Include="..\Resources\Body.png" />
+    <Image Include="..\Resources\Corner_BL_Border.png" />
+    <Image Include="..\Resources\Corner_BL_Filling.png" />
+    <Image Include="..\Resources\Corner_BR_Border.png" />
+    <Image Include="..\Resources\Corner_BR_Filling.png" />
+    <Image Include="..\Resources\Corner_TL_Border.png" />
+    <Image Include="..\Resources\Corner_TL_Filling.png" />
+    <Image Include="..\Resources\Corner_TR_Border.png" />
+    <Image Include="..\Resources\Corner_TR_Filling.png" />
+    <Image Include="..\Resources\Edge_B_Border.png" />
+    <Image Include="..\Resources\Edge_B_Filling.png" />
+    <Image Include="..\Resources\Edge_L_Border.png" />
+    <Image Include="..\Resources\Edge_L_Filling.png" />
+    <Image Include="..\Resources\Edge_R_Border.png" />
+    <Image Include="..\Resources\Edge_R_Filling.png" />
+    <Image Include="..\Resources\Edge_T_Border.png" />
+    <Image Include="..\Resources\Edge_T_Filling.png" />
+    <Image Include="..\Resources\Empty.png" />
+    <Image Include="..\Resources\EvoProgressGradient.png" />
+    <Image Include="..\Resources\RPGradient.png" />
+    <Image Include="..\Resources\SFGradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\Typo_DodamM.ttf" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
