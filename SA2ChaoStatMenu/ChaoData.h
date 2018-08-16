@@ -113,7 +113,7 @@ struct NChaoData
 	char Normal_Curiosity;
 	char Kindness;
 	char Crybaby_energetic;
-	char naive;
+	char Naive_Normal;
 	char solitude;
 	char vitality;
 	char glutton;
