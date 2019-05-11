@@ -696,13 +696,14 @@ std::string FavFruit[8] = {
 	"None",
 };
 
-std::string Grade[6] = {
+std::string Grade[7] = {
 	"E",
 	"D",
 	"C",
 	"B",
 	"A",
 	"S",
+	"X",
 };
 
 std::string Color[14] = {
