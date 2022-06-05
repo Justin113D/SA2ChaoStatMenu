@@ -1,7 +1,8 @@
 ﻿#pragma once
-#include "stdafx.h"
+
 #include "SA2ModLoader.h"
 #include <string>
+
 enum ChaoEmotionball : __int8
 {
 	ChaoEmotionball_Normal = 0,
